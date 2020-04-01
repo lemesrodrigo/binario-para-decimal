@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap');
+
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --title-font: 'Roboto Mono', monospace;
+    --body-bg: #161616;
+    --body-color: #f1f1f1;
+    --box-bg: #000;
+    --box-border-color: lightgray;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+body {
+    background-color: var(--body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h3,
+button,
+footer {
+    color: var(--body-color);
+}
+
+.wrapper {
+    text-align: center;
+    width: 500px;
+}
+
+.wrapper h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-family: var(--title-font);
+    margin-top: 50px;
+}
+
+.box,
+hr {
+    max-width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box {
+    border: var(--box-border-color) solid 1px;
+    border-radius: 10px;
+    margin-top: 75px;
+    background-color: var(--box-bg);
+}
+
+.box h3 {
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+.box input {
+    text-align: center;
+    width: 60%;
+    border: none;
+    padding: 5px 2px;
+}
+
+.box button {
+    cursor: pointer;
+    margin: 15px;
+    background-color: transparent;
+    padding: 8px;
+    border: rgb(13, 219, 24) solid 1px;
+}
+
+.result {
+    display: none;
+    margin-bottom: 25px;
+}
+
+.result input {
+    background-color: white;
+}
+
+footer {
+    background-color: var(--box-bg);
+    text-align: center;
+    font-size: 20px;
+    min-width: 100%;
+    bottom: 0;
+    position: fixed;
+}
